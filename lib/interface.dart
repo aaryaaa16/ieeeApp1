@@ -25,7 +25,6 @@ class _uiState extends State<ui> {
             height: 500,
             child: Swiper(
               itemCount: images.length,
-              layout: SwiperLayout.TINDER,
               pagination: SwiperPagination(
                 builder: DotSwiperPaginationBuilder(
                     color: Colors.white24,
