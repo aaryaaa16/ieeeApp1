@@ -25,7 +25,6 @@ class _uiState extends State<ui> {
             height: 500,
             child: Swiper(
               itemCount: images.length,
-              layout: SwiperLayout.TINDER,
               pagination: SwiperPagination(
                 builder: DotSwiperPaginationBuilder(
                     color: Colors.white24,
@@ -105,7 +104,7 @@ class _uiState extends State<ui> {
                           children: [
                             IconButton(
                                 onPressed: () async{
-                                  const url = 'https://flutter.io';
+                                  const url = 'https://www.youtube.com';
                                   final uri = Uri.parse(url);
                                   if (await canLaunchUrl(uri)) {
                                     await launchUrl(uri);
@@ -121,7 +120,7 @@ class _uiState extends State<ui> {
                             ),
                             IconButton(
                               onPressed: () async{
-                                const url = 'https://flutter.io';
+                                const url = 'https://www.youtube.com';
                                 final uri = Uri.parse(url);
                                 if (await canLaunchUrl(uri)) {
                                   await launchUrl(uri);
